@@ -1,0 +1,22 @@
+[
+	{
+        "ImageId": 1,
+        "ImageTitle":"hospital1",
+		"DateTaken": "01/02/2020",
+        "PublishedDate": "01/02/2020",
+        "Category": "Instruments",
+        "Description": "Diversity effective diversity management.",
+        "Place":"Giyani",
+        "ImageSource":"assets/images/gallery/gallery_1.jpg"		
+    },
+    {
+        "ImageId": 2,
+        "ImageTitle":"hospital1",
+		"DateTaken": "01/02/2020",
+        "PublishedDate": "01/02/2020",
+        "Category": "Instruments",
+        "Description": "Diversity effective diversity management.",
+        "Place":"Giyani",
+        "ImageSource":"assets/images/gallery/gallery_1.jpg"		
+    }
+]
