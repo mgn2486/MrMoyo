@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
 
-/***/ "./node_modules/raw-loader/index.js!./src/app/admin/administration/administration/admin/admin.component.html":
-/*!**********************************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/admin/administration/administration/admin/admin.component.html ***!
-  \**********************************************************************************************************/
+/***/ "./node_modules/raw-loader/index.js!./src/app/admin/administration/admin/admin.component.html":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/admin/administration/admin/admin.component.html ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -18,7 +18,7 @@ module.exports = "<p>admin works!</p>\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container>\n\n    <mat-sidenav mode=\"push\" [(opened)]=\"opened\">\n        <span>Menu</span>\n    </mat-sidenav>\n\n    <mat-sidenav-content>\n        <mat-toolbar color=\"primary\">\n            <span class=\"MyMenuIcon\">\n                <mat-icon matPrefix (click)=\"opened=!opened\" >reorder</mat-icon>\n            </span>\n            <span style=\"margin-left: 20px;\">Mormoe Care Administrations</span> \n            <span class=\"fill-space\"></span>\n            <span class=\"MylogoutIcon\">\n                <button mat-icon-button><mat-icon matPrefix (click)=\"onLogout()\" >power_settings_new</mat-icon></button>\n            </span>\n            <div class=\"card m-5\" style=\"width:18rem\" *ngIf=\"userDetails\">\n                <ul class=\"list-group\">\n                    <li class=\"list-group-item\"><strong>Username : </strong>{{userDetails.userName}}</li>\n                    <li class=\"list-group-item\"><strong>FullName : </strong>{{userDetails.fullName}}</li>\n                    <li class=\"list-group-item\"><strong>Email : </strong>{{userDetails.email}}</li>\n                </ul>\n            </div>\n        </mat-toolbar>\n\n        <router-outlet></router-outlet>\n\n    </mat-sidenav-content>\n</mat-sidenav-container>"
+module.exports = "<mat-sidenav-container>\r\n\r\n    <mat-sidenav mode=\"push\" [(opened)]=\"opened\">\r\n        <span>Menu</span>\r\n        <mat-nav-list>\r\n            <a mat-list-item routerLink=\"/home\" (click)=\"onSidenavClose()\">\r\n              <mat-icon>home</mat-icon> <span class=\"nav-caption\">Home</span>\r\n            </a>\r\n            <a mat-list-item routerLink=\"/aboutus\" (click)=\"onSidenavClose()\">\r\n              <mat-icon>unfold_more</mat-icon><span class=\"nav-caption\">Update System</span>\r\n            </a>\r\n            <a mat-list-item routerLink=\"/courses\" (click)=\"onSidenavClose()\">\r\n              <mat-icon>add_photo_alternate</mat-icon><span class=\"nav-caption\">Our Courses</span>\r\n            </a>\r\n            <a mat-list-item routerLink=\"/gallery\" (click)=\"onSidenavClose()\">\r\n              <mat-icon>add_photo_alternate</mat-icon><span class=\"nav-caption\">Gallery</span>\r\n            </a>\r\n            <a mat-list-item routerLink=\"/tascusers\" (click)=\"onSidenavClose()\">\r\n              <mat-icon>group</mat-icon><span class=\"nav-caption\">Members</span>\r\n            </a>\r\n            <a mat-list-item routerLink=\"/team\" (click)=\"onSidenavClose()\">\r\n              <mat-icon>add_photo_alternate</mat-icon><span class=\"nav-caption\">Team</span>\r\n            </a>\r\n            <a mat-list-item routerLink=\"/contactus\" (click)=\"onSidenavClose()\">\r\n              <mat-icon>local_post_office</mat-icon><span class=\"nav-caption\">Send Messages</span>\r\n            </a>\r\n            <mat-list-item [matMenuTriggerFor]=\"menu\">\r\n              <mat-icon>unfold_more</mat-icon>\r\n              <a matline>Actions</a>\r\n            </mat-list-item>\r\n            <mat-menu #menu=\"matMenu\">\r\n              <button mat-menu-item (click)=\"onSidenavClose()\">Close</button>\r\n              <button mat-menu-item (click)=\"onSidenavClose()\">Add contact</button>\r\n            </mat-menu>\r\n          </mat-nav-list>\r\n    </mat-sidenav>\r\n\r\n    <mat-sidenav-content>\r\n        <mat-toolbar color=\"primary\">\r\n            <span class=\"MyMenuIcon\">\r\n                <mat-icon matPrefix (click)=\"opened=!opened\" >reorder</mat-icon>\r\n            </span>\r\n            <span style=\"margin-left: 20px;\">Mormoe-Care Administrations <br>\r\n            <span style=\"color: white; font-size: 0.8em;\">Welcome: {{firstName}} {{lastName}} {{initials}}</span></span> \r\n            <span class=\"fill-space\"></span>\r\n            <span class=\"MylogoutIcon\">\r\n                <button mat-icon-button><mat-icon matPrefix (click)=\"onLogout()\" >power_settings_new</mat-icon></button>\r\n            </span>\r\n            <!-- <div class=\"card m-5\" style=\"width:18rem\" *ngIf=\"userDetails\">\r\n                <ul class=\"list-group\">\r\n                    <li class=\"list-group-item\"><strong>Username : </strong>{{userDetails.userName}}</li>\r\n                    <li class=\"list-group-item\"><strong>FullName : </strong>{{userDetails.fullName}}</li>\r\n                    <li class=\"list-group-item\"><strong>Email : </strong>{{userDetails.email}}</li>\r\n                </ul>\r\n            </div> -->\r\n        </mat-toolbar>\r\n        \r\n\r\n        <router-outlet></router-outlet>\r\n\r\n    </mat-sidenav-content>\r\n</mat-sidenav-container>\r\n"
 
 /***/ }),
 
@@ -88,17 +88,6 @@ module.exports = "<div class=\"container-fluid\" id=\"footer\" >\r\n    <div cla
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/index.js!./src/app/gallery/gallery.component.html":
-/*!**************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/gallery/gallery.component.html ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<p>Mormore-Care gallery loading.......</p>\r\n"
-
-/***/ }),
-
 /***/ "./node_modules/raw-loader/index.js!./src/app/home/home.component.html":
 /*!********************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/home/home.component.html ***!
@@ -165,6 +154,39 @@ module.exports = "<mat-card class=\"example-card\" color=\"primary\">\r\n    <ma
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/mormo-images/gallery/gallery.component.html":
+/*!***************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/mormo-images/gallery/gallery.component.html ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\r\n  <h4>Our Gallery</h4>\r\n<hr>\r\n  <div class=\"row\">\r\n    <div class=\"col-lg-12\">\r\n        <h4>Places we have been</h4>\r\n        <br>\r\n         <app-image-navigation></app-image-navigation> \r\n         <app-image-list [category]=category >{{category}}</app-image-list>\r\n    </div> \r\n  </div>\r\n</div>\r\n<hr>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/mormo-images/image-list/image-list.component.html":
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/mormo-images/image-list/image-list.component.html ***!
+  \*********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\n    <br>\n    <mat-card class=\"custom\" *ngFor='let image of ImageList' class=\"col-lg-3 col-md-3 col-sm-12\" style=\"margin: 10px;\">\n        <!-- <mat-card-header>\n            <div mat-card-avatar class=\"example-header-image\"></div>\n        </mat-card-header> -->\n        <mat-card-content>\n            <div class=\"col-sm\">\n                <img src={{image.Src}} class=\"img-responsive\"  height=\"100%\" width=\"100%\"/>\n            </div>\n        </mat-card-content>\n        <mat-card-actions>\n        </mat-card-actions>\n    </mat-card>\n</div>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/mormo-images/image-navigation/image-navigation.component.html":
+/*!*********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/mormo-images/image-navigation/image-navigation.component.html ***!
+  \*********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<mat-toolbar style=\"padding-top: 10px;\">\n    <div fxHide.gt-xs>\n        <button mat-icon-button [matMenuTriggerFor]=\"aboveMenu\">\n            <mat-icon>menu</mat-icon> Images List\n        </button>\n        <mat-menu #aboveMenu=\"matMenu\" yPosition=\"below\">\n            <span  *ngFor=\"let categ of imageCategories\">\n                <button mat-menu-item [routerLink]=\"['/courses', categ.Category]\">{{categ.category}}</button>\n            </span>          \n        </mat-menu>\n    </div>\n    <div fxFlex fxLayout  fxHide.xs>\n        <ul fxLayout fxLayoutGap=\"5px\" class=\"navigation-items\" style=\"list-style-type:none\">\n            <div class=\"row\">\n                <li style=\"margin: 10px;\"  class=\"col-sm-3 col-md-3 col-lg-3\">\n                    <button  mat-raised-button style=\"margin: 4px;\" color=\"primary\" [routerLink]=\"['/images', 'all']\">All</button>\n                </li>\n                <li *ngFor=\"let categ of imageCategories\" style=\"margin: 10px;\"  class=\"col-sm-3 col-md-3 col-lg-3\">\n                    <button  mat-raised-button style=\"margin: 4px;\" color=\"primary\" [routerLink]=\"['/images', categ.category]\">{{categ.category}}</button>\n                </li>\n            </div>\n        </ul>\n        <hr>\n    </div>\n</mat-toolbar>"
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/mormobanner/mormobanner.component.html":
 /*!**********************************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/mormobanner/mormobanner.component.html ***!
@@ -183,7 +205,7 @@ module.exports = "<div id=\"carouselExampleSlidesOnly\" class=\"carousel slide\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\">\r\n    <div fxHide.gt-xs>\r\n        <button mat-icon-button (click)=\"onToggleSidenav()\">\r\n            <mat-icon>menu</mat-icon>\r\n        </button>\r\n    </div>\r\n    <div>\r\n        <a routerLink=\"/home\">Mormo-Care</a>\r\n    </div>\r\n    <div fxFlex fxLayout fxLayoutAlign=\"end\" fxHide.xs>\r\n        <ul fxLayout fxLayoutGap=\"15px\" class=\"navigation-items\">\r\n            <li>\r\n                <a routerLink=\"/library\">Library</a>\r\n            </li>\r\n            <li>\r\n                <a routerLink=\"/mormousers\">Members</a>\r\n            </li>\r\n            <li>\r\n                <a routerLink=\"/conferences\">Conferences</a>\r\n            </li>\r\n            <li>\r\n                <a routerLink=\"/gallery\">Gallery</a>\r\n            </li>\r\n            <li>\r\n                <a routerLink=\"/team\">Team</a>\r\n            </li>\r\n            <li>\r\n                <a routerLink=\"/contactus\">Contact Us</a>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n  </mat-toolbar>"
+module.exports = "<mat-toolbar color=\"primary\">\r\n    <div fxHide.gt-xs>\r\n        <button mat-icon-button (click)=\"onToggleSidenav()\">\r\n            <mat-icon>menu</mat-icon>\r\n        </button>\r\n    </div>\r\n    <div>\r\n        <a routerLink=\"/home\">Mormo-Care</a>\r\n    </div>\r\n    <div fxFlex fxLayout fxLayoutAlign=\"end\" fxHide.xs>\r\n        <ul fxLayout fxLayoutGap=\"15px\" class=\"navigation-items\">\r\n            <li>\r\n                <a routerLink=\"/library\">Library</a>\r\n            </li>            \r\n            <li>\r\n                <a routerLink=\"/conferences\">Conferences</a>\r\n            </li>\r\n            <li>\r\n                <a routerLink=\"/images\">Mormoe-Gallery</a>\r\n            </li>\r\n            <li>\r\n                <a routerLink=\"/mormousers\">Members</a>\r\n            </li>\r\n            <li>\r\n                <a routerLink=\"/team\">Team</a>\r\n            </li>\r\n            <li>\r\n                <a routerLink=\"/contactus\">Contact Us</a>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n  </mat-toolbar>"
 
 /***/ }),
 
@@ -194,7 +216,7 @@ module.exports = "<mat-toolbar color=\"primary\">\r\n    <div fxHide.gt-xs>\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-nav-list>\r\n    <a mat-list-item routerLink=\"/home\" (click)=\"onSidenavClose()\">\r\n      <mat-icon>home</mat-icon> <span class=\"nav-caption\">Home</span>\r\n    </a>\r\n    <a mat-list-item routerLink=\"/library\" (click)=\"onSidenavClose()\">\r\n      <mat-icon>account_balance</mat-icon><span class=\"nav-caption\">Library</span>\r\n    </a>\r\n    <a mat-list-item routerLink=\"/mormousers\" (click)=\"onSidenavClose()\">\r\n      <mat-icon>account_balance</mat-icon><span class=\"nav-caption\">Members</span>\r\n    </a>    \r\n    <a mat-list-item routerLink=\"/conferences\" (click)=\"onSidenavClose()\">\r\n      <mat-icon>account_balance</mat-icon><span class=\"nav-caption\">Conferences</span>\r\n    </a>\r\n    <a mat-list-item routerLink=\"/gallery\" (click)=\"onSidenavClose()\">\r\n      <mat-icon>account_balance</mat-icon><span class=\"nav-caption\">Gallery</span>\r\n    </a>\r\n    <a mat-list-item routerLink=\"/team\" (click)=\"onSidenavClose()\">\r\n      <mat-icon>account_balance</mat-icon><span class=\"nav-caption\">Team</span>\r\n    </a>\r\n    <a mat-list-item routerLink=\"/contactus\" (click)=\"onSidenavClose()\">\r\n      <mat-icon>account_balance</mat-icon><span class=\"nav-caption\">Contact Us</span>\r\n    </a>\r\n    <mat-list-item [matMenuTriggerFor]=\"menu\">\r\n      <mat-icon>unfold_more</mat-icon>\r\n      <a matline>Example</a>\r\n    </mat-list-item>\r\n    <mat-menu #menu=\"matMenu\">\r\n      <button mat-menu-item (click)=\"onSidenavClose()\">View profile</button>\r\n      <button mat-menu-item (click)=\"onSidenavClose()\">Add contact</button>\r\n    </mat-menu>\r\n  </mat-nav-list>"
+module.exports = "<mat-nav-list>\r\n    <a mat-list-item routerLink=\"/home\" (click)=\"onSidenavClose()\">\r\n      <mat-icon>home</mat-icon> <span class=\"nav-caption\">Home</span>\r\n    </a>\r\n    <a mat-list-item routerLink=\"/library\" (click)=\"onSidenavClose()\">\r\n      <mat-icon>account_balance</mat-icon><span class=\"nav-caption\">Library</span>\r\n    </a>       \r\n    <a mat-list-item routerLink=\"/conferences\" (click)=\"onSidenavClose()\">\r\n      <mat-icon>account_balance</mat-icon><span class=\"nav-caption\">Conferences</span>\r\n    </a>\r\n    <a mat-list-item routerLink=\"/images\" (click)=\"onSidenavClose()\">\r\n      <mat-icon>account_balance</mat-icon><span class=\"nav-caption\">Mormoe-Gallery</span>\r\n    </a>\r\n    <a mat-list-item routerLink=\"/mormousers\" (click)=\"onSidenavClose()\">\r\n      <mat-icon>account_balance</mat-icon><span class=\"nav-caption\">Members</span>\r\n    </a> \r\n    <a mat-list-item routerLink=\"/team\" (click)=\"onSidenavClose()\">\r\n      <mat-icon>account_balance</mat-icon><span class=\"nav-caption\">Team</span>\r\n    </a>\r\n    <a mat-list-item routerLink=\"/contactus\" (click)=\"onSidenavClose()\">\r\n      <mat-icon>account_balance</mat-icon><span class=\"nav-caption\">Contact Us</span>\r\n    </a>\r\n    <mat-list-item [matMenuTriggerFor]=\"menu\">\r\n      <mat-icon>unfold_more</mat-icon>\r\n      <a matline>Example</a>\r\n    </mat-list-item>\r\n    <mat-menu #menu=\"matMenu\">\r\n      <button mat-menu-item (click)=\"onSidenavClose()\">View profile</button>\r\n      <button mat-menu-item (click)=\"onSidenavClose()\">Add contact</button>\r\n    </mat-menu>\r\n  </mat-nav-list>"
 
 /***/ }),
 
@@ -232,10 +254,10 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./src/app/admin/administration/administration/admin-routing.module.ts":
-/*!*****************************************************************************!*\
-  !*** ./src/app/admin/administration/administration/admin-routing.module.ts ***!
-  \*****************************************************************************/
+/***/ "./src/app/admin/administration/admin-routing.module.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/admin/administration/admin-routing.module.ts ***!
+  \**************************************************************/
 /*! exports provided: AdministrationRoutingModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -243,10 +265,10 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdministrationRoutingModule", function() { return AdministrationRoutingModule; });
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _layout_main_layout_main_layout_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../layout/main-layout/main-layout.component */ "./src/app/admin/layout/main-layout/main-layout.component.ts");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var src_app_auth_authGuard_auth_guard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/auth/authGuard/auth.guard */ "./src/app/auth/authGuard/auth.guard.ts");
-/* harmony import */ var _admin_admin_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./admin/admin.component */ "./src/app/admin/administration/administration/admin/admin.component.ts");
+/* harmony import */ var _layout_main_layout_main_layout_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layout/main-layout/main-layout.component */ "./src/app/admin/layout/main-layout/main-layout.component.ts");
+/* harmony import */ var src_app_auth_authGuard_auth_guard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/auth/authGuard/auth.guard */ "./src/app/auth/authGuard/auth.guard.ts");
+/* harmony import */ var _admin_admin_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./admin/admin.component */ "./src/app/admin/administration/admin/admin.component.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -259,9 +281,9 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 var routes = [
-    { path: 'admin', component: _layout_main_layout_main_layout_component__WEBPACK_IMPORTED_MODULE_1__["MainLayoutComponent"], canActivate: [src_app_auth_authGuard_auth_guard__WEBPACK_IMPORTED_MODULE_3__["AuthGuard"]],
+    { path: 'admin', component: _layout_main_layout_main_layout_component__WEBPACK_IMPORTED_MODULE_1__["MainLayoutComponent"], canActivate: [src_app_auth_authGuard_auth_guard__WEBPACK_IMPORTED_MODULE_2__["AuthGuard"]],
         children: [
-            { path: 'home', component: _admin_admin_component__WEBPACK_IMPORTED_MODULE_4__["AdminComponent"], canActivate: [src_app_auth_authGuard_auth_guard__WEBPACK_IMPORTED_MODULE_3__["AuthGuard"]], }
+            { path: 'home', component: _admin_admin_component__WEBPACK_IMPORTED_MODULE_3__["AdminComponent"], canActivate: [src_app_auth_authGuard_auth_guard__WEBPACK_IMPORTED_MODULE_2__["AuthGuard"]], }
         ]
     }
 ];
@@ -269,7 +291,7 @@ var AdministrationRoutingModule = /** @class */ (function () {
     function AdministrationRoutingModule() {
     }
     AdministrationRoutingModule = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_4__["NgModule"])({
             imports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild(routes)],
             exports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]]
         })
@@ -281,21 +303,21 @@ var AdministrationRoutingModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/admin/administration/administration/admin/admin.component.css":
-/*!*******************************************************************************!*\
-  !*** ./src/app/admin/administration/administration/admin/admin.component.css ***!
-  \*******************************************************************************/
+/***/ "./src/app/admin/administration/admin/admin.component.css":
+/*!****************************************************************!*\
+  !*** ./src/app/admin/administration/admin/admin.component.css ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2FkbWluaXN0cmF0aW9uL2FkbWluaXN0cmF0aW9uL2FkbWluL2FkbWluLmNvbXBvbmVudC5jc3MifQ== */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2FkbWluaXN0cmF0aW9uL2FkbWluL2FkbWluLmNvbXBvbmVudC5jc3MifQ== */"
 
 /***/ }),
 
-/***/ "./src/app/admin/administration/administration/admin/admin.component.ts":
-/*!******************************************************************************!*\
-  !*** ./src/app/admin/administration/administration/admin/admin.component.ts ***!
-  \******************************************************************************/
+/***/ "./src/app/admin/administration/admin/admin.component.ts":
+/*!***************************************************************!*\
+  !*** ./src/app/admin/administration/admin/admin.component.ts ***!
+  \***************************************************************/
 /*! exports provided: AdminComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -321,8 +343,8 @@ var AdminComponent = /** @class */ (function () {
     AdminComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-admin',
-            template: __webpack_require__(/*! raw-loader!./admin.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/administration/administration/admin/admin.component.html"),
-            styles: [__webpack_require__(/*! ./admin.component.css */ "./src/app/admin/administration/administration/admin/admin.component.css")]
+            template: __webpack_require__(/*! raw-loader!./admin.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/administration/admin/admin.component.html"),
+            styles: [__webpack_require__(/*! ./admin.component.css */ "./src/app/admin/administration/admin/admin.component.css")]
         }),
         __metadata("design:paramtypes", [])
     ], AdminComponent);
@@ -333,10 +355,10 @@ var AdminComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/admin/administration/administration/administration.module.ts":
-/*!******************************************************************************!*\
-  !*** ./src/app/admin/administration/administration/administration.module.ts ***!
-  \******************************************************************************/
+/***/ "./src/app/admin/administration/administration.module.ts":
+/*!***************************************************************!*\
+  !*** ./src/app/admin/administration/administration.module.ts ***!
+  \***************************************************************/
 /*! exports provided: AdministrationModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -345,8 +367,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdministrationModule", function() { return AdministrationModule; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _admin_admin_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./admin/admin.component */ "./src/app/admin/administration/administration/admin/admin.component.ts");
-/* harmony import */ var _admin_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./admin-routing.module */ "./src/app/admin/administration/administration/admin-routing.module.ts");
+/* harmony import */ var _admin_admin_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./admin/admin.component */ "./src/app/admin/administration/admin/admin.component.ts");
+/* harmony import */ var _admin_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./admin-routing.module */ "./src/app/admin/administration/admin-routing.module.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -379,18 +401,18 @@ var AdministrationModule = /** @class */ (function () {
 /*!***********************************************!*\
   !*** ./src/app/admin/layout/layout.module.ts ***!
   \***********************************************/
-/*! exports provided: SecurePagesLayoutModule */
+/*! exports provided: LayoutModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SecurePagesLayoutModule", function() { return SecurePagesLayoutModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LayoutModule", function() { return LayoutModule; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _main_layout_main_layout_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./main-layout/main-layout.component */ "./src/app/admin/layout/main-layout/main-layout.component.ts");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var src_app_material_material_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/material/material.module */ "./src/app/material/material.module.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _main_layout_main_layout_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./main-layout/main-layout.component */ "./src/app/admin/layout/main-layout/main-layout.component.ts");
+/* harmony import */ var src_app_material_material_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/material/material.module */ "./src/app/material/material.module.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -403,20 +425,20 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-var SecurePagesLayoutModule = /** @class */ (function () {
-    function SecurePagesLayoutModule() {
+var LayoutModule = /** @class */ (function () {
+    function LayoutModule() {
     }
-    SecurePagesLayoutModule = __decorate([
+    LayoutModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
             imports: [
-                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], src_app_material_material_module__WEBPACK_IMPORTED_MODULE_4__["MaterialModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"].forChild([]),
+                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], src_app_material_material_module__WEBPACK_IMPORTED_MODULE_5__["MaterialModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forChild([]),
             ],
             exports: [],
-            declarations: [_main_layout_main_layout_component__WEBPACK_IMPORTED_MODULE_2__["MainLayoutComponent"]]
+            declarations: [_main_layout_main_layout_component__WEBPACK_IMPORTED_MODULE_4__["MainLayoutComponent"]]
         })
-    ], SecurePagesLayoutModule);
-    return SecurePagesLayoutModule;
+    ], LayoutModule);
+    return LayoutModule;
 }());
 
 
@@ -471,6 +493,9 @@ var MainLayoutComponent = /** @class */ (function () {
         var _this = this;
         this.userService.getUserProfile().subscribe(function (res) {
             _this.userDetails = res;
+            _this.firstName = _this.userDetails.firstName;
+            _this.lastName = _this.userDetails.lastName;
+            _this.initials = _this.userDetails.initials;
         }, function (err) {
             console.log(err);
         });
@@ -514,12 +539,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact-us/contact-us.component */ "./src/app/contact-us/contact-us.component.ts");
 /* harmony import */ var _library_library_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./library/library.component */ "./src/app/library/library.component.ts");
 /* harmony import */ var _conferences_conferences_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./conferences/conferences.component */ "./src/app/conferences/conferences.component.ts");
-/* harmony import */ var _gallery_gallery_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./gallery/gallery.component */ "./src/app/gallery/gallery.component.ts");
-/* harmony import */ var _membership_membership_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./membership/membership.component */ "./src/app/membership/membership.component.ts");
-/* harmony import */ var _membership_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./membership/sign-up/sign-up.component */ "./src/app/membership/sign-up/sign-up.component.ts");
-/* harmony import */ var _membership_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./membership/sign-in/sign-in.component */ "./src/app/membership/sign-in/sign-in.component.ts");
-/* harmony import */ var _team_team_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./team/team.component */ "./src/app/team/team.component.ts");
-/* harmony import */ var _auth_authGuard_auth_guard__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./auth/authGuard/auth.guard */ "./src/app/auth/authGuard/auth.guard.ts");
+/* harmony import */ var _membership_membership_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./membership/membership.component */ "./src/app/membership/membership.component.ts");
+/* harmony import */ var _membership_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./membership/sign-up/sign-up.component */ "./src/app/membership/sign-up/sign-up.component.ts");
+/* harmony import */ var _membership_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./membership/sign-in/sign-in.component */ "./src/app/membership/sign-in/sign-in.component.ts");
+/* harmony import */ var _team_team_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./team/team.component */ "./src/app/team/team.component.ts");
+/* harmony import */ var _auth_authGuard_auth_guard__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./auth/authGuard/auth.guard */ "./src/app/auth/authGuard/auth.guard.ts");
+/* harmony import */ var _mormo_images_gallery_gallery_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./mormo-images/gallery/gallery.component */ "./src/app/mormo-images/gallery/gallery.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -544,17 +569,18 @@ var routes = [
     { path: 'library', component: _library_library_component__WEBPACK_IMPORTED_MODULE_4__["LibraryComponent"] },
     { path: 'mormousers', redirectTo: '/login', pathMatch: 'full' },
     { path: 'conferences', component: _conferences_conferences_component__WEBPACK_IMPORTED_MODULE_5__["ConferencesComponent"] },
-    { path: 'gallery', component: _gallery_gallery_component__WEBPACK_IMPORTED_MODULE_6__["GalleryComponent"] },
+    { path: 'images', component: _mormo_images_gallery_gallery_component__WEBPACK_IMPORTED_MODULE_11__["GalleryComponent"] },
+    { path: 'images/:category', component: _mormo_images_gallery_gallery_component__WEBPACK_IMPORTED_MODULE_11__["GalleryComponent"] },
     { path: 'contactus', component: _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_3__["ContactUsComponent"] },
-    { path: 'team', component: _team_team_component__WEBPACK_IMPORTED_MODULE_10__["TeamComponent"] },
-    { path: 'admin', redirectTo: 'admin/home', canActivate: [_auth_authGuard_auth_guard__WEBPACK_IMPORTED_MODULE_11__["AuthGuard"]] },
+    { path: 'team', component: _team_team_component__WEBPACK_IMPORTED_MODULE_9__["TeamComponent"] },
+    { path: 'admin', redirectTo: 'admin/home', canActivate: [_auth_authGuard_auth_guard__WEBPACK_IMPORTED_MODULE_10__["AuthGuard"]] },
     {
-        path: 'signup', component: _membership_membership_component__WEBPACK_IMPORTED_MODULE_7__["MembershipComponent"],
-        children: [{ path: 'signup', component: _membership_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_8__["SignUpComponent"] }]
+        path: 'signup', component: _membership_membership_component__WEBPACK_IMPORTED_MODULE_6__["MembershipComponent"],
+        children: [{ path: 'signup', component: _membership_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_7__["SignUpComponent"] }]
     },
     {
-        path: 'login', component: _membership_membership_component__WEBPACK_IMPORTED_MODULE_7__["MembershipComponent"],
-        children: [{ path: 'login', component: _membership_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_9__["SignInComponent"] }]
+        path: 'login', component: _membership_membership_component__WEBPACK_IMPORTED_MODULE_6__["MembershipComponent"],
+        children: [{ path: 'login', component: _membership_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_8__["SignInComponent"] }]
     },
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -647,25 +673,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _navigation_sidenav_list_sidenav_list_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./navigation/sidenav-list/sidenav-list.component */ "./src/app/navigation/sidenav-list/sidenav-list.component.ts");
 /* harmony import */ var _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./contact-us/contact-us.component */ "./src/app/contact-us/contact-us.component.ts");
 /* harmony import */ var _library_library_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./library/library.component */ "./src/app/library/library.component.ts");
-/* harmony import */ var _gallery_gallery_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./gallery/gallery.component */ "./src/app/gallery/gallery.component.ts");
-/* harmony import */ var _conferences_conferences_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./conferences/conferences.component */ "./src/app/conferences/conferences.component.ts");
-/* harmony import */ var _mormobanner_mormobanner_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./mormobanner/mormobanner.component */ "./src/app/mormobanner/mormobanner.component.ts");
-/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
-/* harmony import */ var _membership_membership_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./membership/membership.component */ "./src/app/membership/membership.component.ts");
-/* harmony import */ var _membership_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./membership/sign-in/sign-in.component */ "./src/app/membership/sign-in/sign-in.component.ts");
-/* harmony import */ var _membership_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./membership/sign-up/sign-up.component */ "./src/app/membership/sign-up/sign-up.component.ts");
-/* harmony import */ var _shared_services_user_service_user_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./shared/services/user-service/user.service */ "./src/app/shared/services/user-service/user.service.ts");
-/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ngx-toastr */ "./node_modules/ngx-toastr/fesm5/ngx-toastr.js");
-/* harmony import */ var _team_team_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./team/team.component */ "./src/app/team/team.component.ts");
-/* harmony import */ var _admin_administration_administration_administration_module__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./admin/administration/administration/administration.module */ "./src/app/admin/administration/administration/administration.module.ts");
-/* harmony import */ var _auth_interceptor_auth_interceptor__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./auth/interceptor/auth.interceptor */ "./src/app/auth/interceptor/auth.interceptor.ts");
-/* harmony import */ var _admin_layout_layout_module__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./admin/layout/layout.module */ "./src/app/admin/layout/layout.module.ts");
+/* harmony import */ var _conferences_conferences_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./conferences/conferences.component */ "./src/app/conferences/conferences.component.ts");
+/* harmony import */ var _mormobanner_mormobanner_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./mormobanner/mormobanner.component */ "./src/app/mormobanner/mormobanner.component.ts");
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
+/* harmony import */ var _membership_membership_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./membership/membership.component */ "./src/app/membership/membership.component.ts");
+/* harmony import */ var _membership_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./membership/sign-in/sign-in.component */ "./src/app/membership/sign-in/sign-in.component.ts");
+/* harmony import */ var _membership_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./membership/sign-up/sign-up.component */ "./src/app/membership/sign-up/sign-up.component.ts");
+/* harmony import */ var _shared_services_user_service_user_service__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./shared/services/user-service/user.service */ "./src/app/shared/services/user-service/user.service.ts");
+/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ngx-toastr */ "./node_modules/ngx-toastr/fesm5/ngx-toastr.js");
+/* harmony import */ var _team_team_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./team/team.component */ "./src/app/team/team.component.ts");
+/* harmony import */ var _auth_interceptor_auth_interceptor__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./auth/interceptor/auth.interceptor */ "./src/app/auth/interceptor/auth.interceptor.ts");
+/* harmony import */ var _shared_services_image_service_image_service__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./shared/services/image-service/image.service */ "./src/app/shared/services/image-service/image.service.ts");
+/* harmony import */ var _shared_services_team_service_team_service__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./shared/services/team-service/team.service */ "./src/app/shared/services/team-service/team.service.ts");
+/* harmony import */ var _mormo_images_image_list_image_list_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./mormo-images/image-list/image-list.component */ "./src/app/mormo-images/image-list/image-list.component.ts");
+/* harmony import */ var _mormo_images_image_navigation_image_navigation_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./mormo-images/image-navigation/image-navigation.component */ "./src/app/mormo-images/image-navigation/image-navigation.component.ts");
+/* harmony import */ var _mormo_images_gallery_gallery_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./mormo-images/gallery/gallery.component */ "./src/app/mormo-images/gallery/gallery.component.ts");
+/* harmony import */ var _admin_layout_layout_module__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./admin/layout/layout.module */ "./src/app/admin/layout/layout.module.ts");
+/* harmony import */ var _admin_administration_administration_module__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./admin/administration/administration.module */ "./src/app/admin/administration/administration.module.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
 
 
 
@@ -711,28 +745,31 @@ var AppModule = /** @class */ (function () {
                 _navigation_sidenav_list_sidenav_list_component__WEBPACK_IMPORTED_MODULE_14__["SidenavListComponent"],
                 _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_15__["ContactUsComponent"],
                 _library_library_component__WEBPACK_IMPORTED_MODULE_16__["LibraryComponent"],
-                _gallery_gallery_component__WEBPACK_IMPORTED_MODULE_17__["GalleryComponent"],
-                _conferences_conferences_component__WEBPACK_IMPORTED_MODULE_18__["ConferencesComponent"],
-                _mormobanner_mormobanner_component__WEBPACK_IMPORTED_MODULE_19__["MormobannerComponent"],
-                _footer_footer_component__WEBPACK_IMPORTED_MODULE_20__["FooterComponent"],
-                _membership_membership_component__WEBPACK_IMPORTED_MODULE_21__["MembershipComponent"],
-                _membership_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_22__["SignInComponent"],
-                _membership_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_23__["SignUpComponent"],
-                _team_team_component__WEBPACK_IMPORTED_MODULE_26__["TeamComponent"],
+                _mormo_images_gallery_gallery_component__WEBPACK_IMPORTED_MODULE_31__["GalleryComponent"],
+                _conferences_conferences_component__WEBPACK_IMPORTED_MODULE_17__["ConferencesComponent"],
+                _mormobanner_mormobanner_component__WEBPACK_IMPORTED_MODULE_18__["MormobannerComponent"],
+                _footer_footer_component__WEBPACK_IMPORTED_MODULE_19__["FooterComponent"],
+                _membership_membership_component__WEBPACK_IMPORTED_MODULE_20__["MembershipComponent"],
+                _membership_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_21__["SignInComponent"],
+                _membership_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_22__["SignUpComponent"],
+                _team_team_component__WEBPACK_IMPORTED_MODULE_25__["TeamComponent"],
+                _mormo_images_image_list_image_list_component__WEBPACK_IMPORTED_MODULE_29__["ImageListComponent"],
+                _mormo_images_image_navigation_image_navigation_component__WEBPACK_IMPORTED_MODULE_30__["ImageNavigationComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"].withServerTransition({ appId: 'ng-cli-universal' }),
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _material_material_module__WEBPACK_IMPORTED_MODULE_9__["MaterialModule"], _admin_layout_layout_module__WEBPACK_IMPORTED_MODULE_29__["SecurePagesLayoutModule"], _admin_administration_administration_administration_module__WEBPACK_IMPORTED_MODULE_27__["AdministrationModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _material_material_module__WEBPACK_IMPORTED_MODULE_9__["MaterialModule"], _admin_layout_layout_module__WEBPACK_IMPORTED_MODULE_32__["LayoutModule"], _admin_administration_administration_module__WEBPACK_IMPORTED_MODULE_33__["AdministrationModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_10__["AppRoutingModule"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_13__["FlexLayoutModule"],
-                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_8__["BrowserAnimationsModule"], ngx_toastr__WEBPACK_IMPORTED_MODULE_25__["ToastrModule"].forRoot({
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_8__["BrowserAnimationsModule"], ngx_toastr__WEBPACK_IMPORTED_MODULE_24__["ToastrModule"].forRoot({
                     progressBar: true
                 })
             ],
-            providers: [_shared_services_user_service_user_service__WEBPACK_IMPORTED_MODULE_24__["UserService"], {
+            providers: [_shared_services_image_service_image_service__WEBPACK_IMPORTED_MODULE_27__["ImageService"], _shared_services_team_service_team_service__WEBPACK_IMPORTED_MODULE_28__["TeamService"], _shared_services_user_service_user_service__WEBPACK_IMPORTED_MODULE_23__["UserService"], {
                     provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HTTP_INTERCEPTORS"],
-                    useClass: _auth_interceptor_auth_interceptor__WEBPACK_IMPORTED_MODULE_28__["AuthInterceptor"],
+                    useClass: _auth_interceptor_auth_interceptor__WEBPACK_IMPORTED_MODULE_26__["AuthInterceptor"],
                     multi: true
-                }],
+                }
+            ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
         })
     ], AppModule);
@@ -754,23 +791,42 @@ var AppModule = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthGuard", function() { return AuthGuard; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 var AuthGuard = /** @class */ (function () {
-    function AuthGuard() {
+    /**
+     *
+     */
+    function AuthGuard(router) {
+        this.router = router;
     }
     AuthGuard.prototype.canActivate = function (next, state) {
-        return true;
+        if (localStorage.getItem('token') != null) {
+            return true;
+        }
+        else {
+            this.router.navigate(['/login']);
+            return false;
+        }
     };
+    AuthGuard.ctorParameters = function () { return [
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"] }
+    ]; };
     AuthGuard = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
             providedIn: 'root'
-        })
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
     ], AuthGuard);
     return AuthGuard;
 }());
@@ -1198,58 +1254,6 @@ var FooterComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/gallery/gallery.component.css":
-/*!***********************************************!*\
-  !*** ./src/app/gallery/gallery.component.css ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2dhbGxlcnkvZ2FsbGVyeS5jb21wb25lbnQuY3NzIn0= */"
-
-/***/ }),
-
-/***/ "./src/app/gallery/gallery.component.ts":
-/*!**********************************************!*\
-  !*** ./src/app/gallery/gallery.component.ts ***!
-  \**********************************************/
-/*! exports provided: GalleryComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GalleryComponent", function() { return GalleryComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var GalleryComponent = /** @class */ (function () {
-    function GalleryComponent() {
-    }
-    GalleryComponent.prototype.ngOnInit = function () {
-    };
-    GalleryComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-gallery',
-            template: __webpack_require__(/*! raw-loader!./gallery.component.html */ "./node_modules/raw-loader/index.js!./src/app/gallery/gallery.component.html"),
-            styles: [__webpack_require__(/*! ./gallery.component.css */ "./src/app/gallery/gallery.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], GalleryComponent);
-    return GalleryComponent;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/home/home.component.css":
 /*!*****************************************!*\
   !*** ./src/app/home/home.component.css ***!
@@ -1628,7 +1632,7 @@ var SignInComponent = /** @class */ (function () {
         this.userService.userAuthentication(formData).subscribe(function (data) {
             form.reset();
             localStorage.setItem('token', data.token);
-            _this.router.navigate(['/admin']);
+            _this.router.navigate(['/admin/home']);
         }, function (err) {
             _this.isLoginError = true;
             if (err.status == 400) {
@@ -1640,15 +1644,6 @@ var SignInComponent = /** @class */ (function () {
             }
         });
     };
-    //   OnSubmit(userName,password){
-    //     this.userService.userAuthentication(userName,password).subscribe((data : any)=>{
-    //      localStorage.setItem('userToken',data.access_token);
-    //      this.router.navigate(['/home']);
-    //    },
-    //    (err : HttpErrorResponse)=>{
-    //      this.isLoginError = true;
-    //    });
-    //  }
     SignInComponent.prototype.getUserInformation = function (formData) {
         return {
             UserName: formData.emailAddress,
@@ -1898,6 +1893,219 @@ function matchPassword(group) {
 
 /***/ }),
 
+/***/ "./src/app/mormo-images/gallery/gallery.component.css":
+/*!************************************************************!*\
+  !*** ./src/app/mormo-images/gallery/gallery.component.css ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21vcm1vLWltYWdlcy9nYWxsZXJ5L2dhbGxlcnkuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/mormo-images/gallery/gallery.component.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/mormo-images/gallery/gallery.component.ts ***!
+  \***********************************************************/
+/*! exports provided: GalleryComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GalleryComponent", function() { return GalleryComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var src_app_shared_services_image_service_image_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/shared/services/image-service/image.service */ "./src/app/shared/services/image-service/image.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var GalleryComponent = /** @class */ (function () {
+    function GalleryComponent(route, router, imageService) {
+        this.route = route;
+        this.router = router;
+        this.imageService = imageService;
+        this.category = '';
+        this.ImageList = [];
+    }
+    GalleryComponent.prototype.getImages = function () {
+        var _this = this;
+        this.imageService.getAllImages().subscribe(function (response) {
+            _this.ImageList = response;
+        });
+    };
+    GalleryComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.router.navigateByUrl('/images/all');
+        this.route.params.subscribe(function (p) { return _this.category = p['category']; });
+    };
+    GalleryComponent.ctorParameters = function () { return [
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"] },
+        { type: src_app_shared_services_image_service_image_service__WEBPACK_IMPORTED_MODULE_2__["ImageService"] }
+    ]; };
+    GalleryComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-gallery',
+            template: __webpack_require__(/*! raw-loader!./gallery.component.html */ "./node_modules/raw-loader/index.js!./src/app/mormo-images/gallery/gallery.component.html"),
+            styles: [__webpack_require__(/*! ./gallery.component.css */ "./src/app/mormo-images/gallery/gallery.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], src_app_shared_services_image_service_image_service__WEBPACK_IMPORTED_MODULE_2__["ImageService"]])
+    ], GalleryComponent);
+    return GalleryComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/mormo-images/image-list/image-list.component.css":
+/*!******************************************************************!*\
+  !*** ./src/app/mormo-images/image-list/image-list.component.css ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".custom.mat-card{\r\n    padding: 0;\r\n   }\r\n\r\n.mat-card-content {\r\n    font-size: 24px;\r\n    padding: 0px !important;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbW9ybW8taW1hZ2VzL2ltYWdlLWxpc3QvaW1hZ2UtbGlzdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtHQUNYOztBQUVIO0lBQ0ksZUFBZTtJQUNmLHVCQUF1QjtBQUMzQiIsImZpbGUiOiJzcmMvYXBwL21vcm1vLWltYWdlcy9pbWFnZS1saXN0L2ltYWdlLWxpc3QuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jdXN0b20ubWF0LWNhcmR7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG4gICB9XHJcblxyXG4ubWF0LWNhcmQtY29udGVudCB7XHJcbiAgICBmb250LXNpemU6IDI0cHg7XHJcbiAgICBwYWRkaW5nOiAwcHggIWltcG9ydGFudDtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/mormo-images/image-list/image-list.component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/mormo-images/image-list/image-list.component.ts ***!
+  \*****************************************************************/
+/*! exports provided: ImageListComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ImageListComponent", function() { return ImageListComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_shared_services_image_service_image_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/shared/services/image-service/image.service */ "./src/app/shared/services/image-service/image.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ImageListComponent = /** @class */ (function () {
+    function ImageListComponent(imageService) {
+        this.imageService = imageService;
+        this.category = '';
+        this.ImageList = [];
+    }
+    ImageListComponent.prototype.getImagesPerCategory = function () {
+        var _this = this;
+        return this.imageService.getImagesByCategory(this.category).then(function (images) {
+            _this.ImageList = images;
+        });
+    };
+    ImageListComponent.prototype.ngOnChanges = function () {
+        this.getImagesPerCategory();
+    };
+    ImageListComponent.prototype.ngOnInit = function () {
+    };
+    ImageListComponent.ctorParameters = function () { return [
+        { type: src_app_shared_services_image_service_image_service__WEBPACK_IMPORTED_MODULE_1__["ImageService"] }
+    ]; };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Object)
+    ], ImageListComponent.prototype, "category", void 0);
+    ImageListComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-image-list',
+            template: __webpack_require__(/*! raw-loader!./image-list.component.html */ "./node_modules/raw-loader/index.js!./src/app/mormo-images/image-list/image-list.component.html"),
+            styles: [__webpack_require__(/*! ./image-list.component.css */ "./src/app/mormo-images/image-list/image-list.component.css")]
+        }),
+        __metadata("design:paramtypes", [src_app_shared_services_image_service_image_service__WEBPACK_IMPORTED_MODULE_1__["ImageService"]])
+    ], ImageListComponent);
+    return ImageListComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/mormo-images/image-navigation/image-navigation.component.css":
+/*!******************************************************************************!*\
+  !*** ./src/app/mormo-images/image-navigation/image-navigation.component.css ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21vcm1vLWltYWdlcy9pbWFnZS1uYXZpZ2F0aW9uL2ltYWdlLW5hdmlnYXRpb24uY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/mormo-images/image-navigation/image-navigation.component.ts":
+/*!*****************************************************************************!*\
+  !*** ./src/app/mormo-images/image-navigation/image-navigation.component.ts ***!
+  \*****************************************************************************/
+/*! exports provided: ImageNavigationComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ImageNavigationComponent", function() { return ImageNavigationComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_shared_services_image_service_image_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/shared/services/image-service/image.service */ "./src/app/shared/services/image-service/image.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ImageNavigationComponent = /** @class */ (function () {
+    function ImageNavigationComponent(imageService) {
+        this.imageService = imageService;
+        this.imageCategories = [];
+    }
+    ImageNavigationComponent.prototype.getImageCategories = function () {
+        var _this = this;
+        return this.imageService.getImagesForCategory()
+            .subscribe(function (response) { return _this.imageCategories.push(response); });
+    };
+    ImageNavigationComponent.prototype.ngOnInit = function () {
+        this.getImageCategories();
+    };
+    ImageNavigationComponent.ctorParameters = function () { return [
+        { type: src_app_shared_services_image_service_image_service__WEBPACK_IMPORTED_MODULE_1__["ImageService"] }
+    ]; };
+    ImageNavigationComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-image-navigation',
+            template: __webpack_require__(/*! raw-loader!./image-navigation.component.html */ "./node_modules/raw-loader/index.js!./src/app/mormo-images/image-navigation/image-navigation.component.html"),
+            styles: [__webpack_require__(/*! ./image-navigation.component.css */ "./src/app/mormo-images/image-navigation/image-navigation.component.css")]
+        }),
+        __metadata("design:paramtypes", [src_app_shared_services_image_service_image_service__WEBPACK_IMPORTED_MODULE_1__["ImageService"]])
+    ], ImageNavigationComponent);
+    return ImageNavigationComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/mormobanner/mormobanner.component.css":
 /*!*******************************************************!*\
   !*** ./src/app/mormobanner/mormobanner.component.css ***!
@@ -2109,6 +2317,99 @@ var EmailService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/shared/services/image-service/image.service.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/shared/services/image-service/image.service.ts ***!
+  \****************************************************************/
+/*! exports provided: ImageService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ImageService", function() { return ImageService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var ImageService = /** @class */ (function () {
+    function ImageService(http) {
+        this.http = http;
+        this.imageUrl = "assets/api/images/image.json";
+    }
+    ImageService.prototype.getAllImages = function () {
+        return this.http.get(this.imageUrl);
+    };
+    ImageService.prototype.getImageById = function (imageId) {
+        return this.getAllImages().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (images) { return images.find(function (image) { return image.ImageId == imageId; }); }));
+    };
+    ImageService.prototype.getCategories = function () {
+        return this.getAllImages().toPromise()
+            .then(function (images) { return images.map(function (image) { return image.Category; }); });
+    };
+    ImageService.prototype.getImagesByCategory = function (category) {
+        if (category === 'all') {
+            return this.getAllImages().toPromise();
+        }
+        return this.getAllImages().toPromise().then(function (images) { return images.filter(function (image) { return image.Category === category; }); });
+    };
+    ImageService.prototype.getImagesForCategory = function () {
+        var _this = this;
+        var imagesForCategory = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
+        this.getCategories().then(function (depts) {
+            var departmentSet = new Set(depts);
+            departmentSet.forEach(function (categ) {
+                _this.getAllImages().toPromise()
+                    .then(function (images) { return images.filter(function (image) { return image.Category === categ; }); })
+                    .then(function (images) { return imagesForCategory.next({ category: categ, images: images }); });
+            });
+        });
+        return imagesForCategory;
+    };
+    ImageService.prototype.handleError = function (err) {
+        // in a real world app, we may send the server to some remote logging infrastructure
+        // instead of just logging it to the console
+        var errorMessage = '';
+        if (err.error instanceof Error) {
+            // A client-side or network error occurred. Handle it accordingly.
+            errorMessage = "An error occurred: " + err.error.message;
+        }
+        else {
+            // The backend returned an unsuccessful response code.
+            // The response body may contain clues as to what went wrong,
+            errorMessage = "Server returned code: " + err.status + ", error message is: " + err.message;
+        }
+        console.error(errorMessage);
+        return rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].throw(errorMessage);
+    };
+    ImageService.ctorParameters = function () { return [
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }
+    ]; };
+    ImageService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], ImageService);
+    return ImageService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/shared/services/team-service/team.service.ts":
 /*!**************************************************************!*\
   !*** ./src/app/shared/services/team-service/team.service.ts ***!
@@ -2236,7 +2537,8 @@ var UserService = /** @class */ (function () {
         return this.http.post(this.rootUrl + 'api/applicationUser/Login', formData);
     };
     UserService.prototype.getUserProfile = function () {
-        var tokenHeader = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({ 'Authorization': 'Bearer ' + localStorage.getItem('token') });
+        var token = localStorage.getItem('token');
+        var tokenHeader = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({ 'Authorization': ' Bearer ' + token });
         return this.http.get(this.rootUrl + 'api/UserProfile', { headers: tokenHeader });
     };
     UserService.ctorParameters = function () { return [
