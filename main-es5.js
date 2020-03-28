@@ -51,7 +51,7 @@ module.exports = "<app-layout>\r\n  <mat-sidenav-container>\r\n    <mat-sidenav 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>Mormore-Care Conferences loading.......</p>\r\n"
+module.exports = "<div class=\"container\">\r\n    <h3>Conferences</h3>\r\n    <hr>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <p><b>Mormo-Care</b> conferences and workshops are there to help to apply learning concepts in our lives context using the principles of self developemt and we discuss the main tools to effectively develop personal abilities. A portion of our workshop is customised to the individual, enabling them to quickly identify their own areas of expertise and challenges. Many case studies are analysed to assist the delegate with application of the theory. This workshop involves pre-course preparation and the delegates can expect to have some after-hours work whilst the workshop is in session.</p>\r\n        </div>    \r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <img src=\"assets/images/conferences/conference_banner_1.jpg\" class=\"img-responsive img-thumbnail\" width=\"100%\">\r\n        </div>\r\n    </div>\r\n    <hr>\r\n</div>"
 
 /***/ }),
 
@@ -128,7 +128,7 @@ module.exports = "<div fxLayout=\"row wrap\" fxLayoutAlign=\"center center\" cla
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>Mormore-Care library Books loading.......</p>\r\n"
+module.exports = "<div class=\"container\">\r\n    <h3>Library</h3>\r\n    <hr>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <p>At Mormo Care we will continously produce and update great articles, books and videos that are designed to help in self development for everyone during your spare time.</p>\r\n        </div>    \r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <img src=\"assets/images/Library/library_banner.jpg\" class=\"img-responsive img-thumbnail\" width=\"100%\">\r\n        </div>\r\n    </div>\r\n    <hr>\r\n</div>"
 
 /***/ }),
 
