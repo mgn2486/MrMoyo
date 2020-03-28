@@ -51,7 +51,7 @@ module.exports = "<app-layout>\r\n  <mat-sidenav-container>\r\n    <mat-sidenav 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <h3>Conferences</h3>\r\n    <hr>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <p><b>Mormo-Care</b> conferences and workshops are there to help to apply learning concepts in our lives context using the principles of self developemt and we discuss the main tools to effectively develop personal abilities. A portion of our workshop is customised to the individual, enabling them to quickly identify their own areas of expertise and challenges. Many case studies are analysed to assist the delegate with application of the theory. This workshop involves pre-course preparation and the delegates can expect to have some after-hours work whilst the workshop is in session.</p>\r\n        </div>    \r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <img src=\"assets/images/conferences/conference_1_edited.jpg\" class=\"img-responsive img-thumbnail\" width=\"100%\">\r\n        </div>\r\n    </div>\r\n    <hr>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n    <h3>Conferences</h3>\r\n    <hr>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <p><b>Mormo-Care</b> conferences and workshops are there to help to apply learning concepts in our lives context using the principles of self developemt and we discuss the main tools to effectively develop personal abilities. A portion of our workshop is customised to the individual, enabling them to quickly identify their own areas of expertise and challenges. Many case studies are analysed to assist the delegate with application of the theory. This workshop involves pre-course preparation and the delegates can expect to have some after-hours work whilst the workshop is in session.</p>\r\n        </div>    \r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <img src=\"assets/images/conferences/conference_1_edited.jpg\" class=\"img-responsive img-thumbnail\" width=\"100%\">\r\n        </div>\r\n    </div>\r\n    <hr>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -128,7 +128,7 @@ module.exports = "<div fxLayout=\"row wrap\" fxLayoutAlign=\"center center\" cla
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <h3>Library</h3>\r\n    <hr>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <p>At Mormo Care we will continously produce and update great articles, books and videos that are designed to help in self development for everyone during your spare time.</p>\r\n        </div>    \r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <img src=\"assets/images/Library/library_banner.jpg\" class=\"img-responsive img-thumbnail\" width=\"100%\">\r\n        </div>\r\n    </div>\r\n    <hr>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n    <h3>Library</h3>\r\n    <hr>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <p>At Mormo Care we will continously produce and update great articles, books and videos that are designed to help in self development for everyone during your spare time.</p>\r\n        </div>    \r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <img src=\"assets/images/Library/library_banner.jpg\" class=\"img-responsive img-thumbnail\" width=\"100%\">\r\n        </div>\r\n    </div>\r\n    <hr>\r\n\r\n    <!-- Library -->\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-md\">\r\n            <mat-tab-group mat-stretch-tabs (selectedTabChange)=\"executeSelectedChange($event)\">\r\n                <mat-tab bg-color=\"primary\" label=\"ARTICLES\">  \r\n                    <!-- Articles -->\r\n                    <!-- End Articles -->\r\n                </mat-tab>\r\n                <mat-tab label=\"BOOKS\">\r\n                    <!-- BOOKS -->\r\n                    <!-- End BOOKS -->\r\n                </mat-tab>\r\n                <mat-tab label=\"VIDEOS\">\r\n                    <!-- VIDEOS -->\r\n                    <!-- End VIDEOS -->\r\n                </mat-tab>\r\n            </mat-tab-group>\r\n        </div> \r\n    </div>\r\n    \r\n    <!-- End Library-->\r\n\r\n\r\n</div>"
 
 /***/ }),
 
@@ -1436,7 +1436,7 @@ var LayoutComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2xpYnJhcnkvbGlicmFyeS5jb21wb25lbnQuY3NzIn0= */"
+module.exports = "mat-tab-group {\r\n    text-align: left;\r\n}\r\n\r\nmat-tab-group p {\r\n    padding-top: 20px;\r\n}\r\n\r\n::ng-deep .mat-tab-label.mat-tab-label-active {\r\n  min-width: 25px !important;\r\n  padding: 5px; \r\n  background-color: #1b2dc9 !important;\r\n  color: white;\r\n  font-weight: 700;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGlicmFyeS9saWJyYXJ5LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxpQkFBaUI7QUFDckI7O0FBRUE7RUFDRSwwQkFBMEI7RUFDMUIsWUFBWTtFQUNaLG9DQUFvQztFQUNwQyxZQUFZO0VBQ1osZ0JBQWdCO0FBQ2xCIiwiZmlsZSI6InNyYy9hcHAvbGlicmFyeS9saWJyYXJ5LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtdGFiLWdyb3VwIHtcclxuICAgIHRleHQtYWxpZ246IGxlZnQ7XHJcbn1cclxuXHJcbm1hdC10YWItZ3JvdXAgcCB7XHJcbiAgICBwYWRkaW5nLXRvcDogMjBweDtcclxufVxyXG5cclxuOjpuZy1kZWVwIC5tYXQtdGFiLWxhYmVsLm1hdC10YWItbGFiZWwtYWN0aXZlIHtcclxuICBtaW4td2lkdGg6IDI1cHggIWltcG9ydGFudDtcclxuICBwYWRkaW5nOiA1cHg7IFxyXG4gIGJhY2tncm91bmQtY29sb3I6ICMxYjJkYzkgIWltcG9ydGFudDtcclxuICBjb2xvcjogd2hpdGU7XHJcbiAgZm9udC13ZWlnaHQ6IDcwMDtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -1451,6 +1451,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LibraryComponent", function() { return LibraryComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _shared_services_document_service_document_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/services/document-service/document.service */ "./src/app/shared/services/document-service/document.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1461,18 +1462,55 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var LibraryComponent = /** @class */ (function () {
-    function LibraryComponent() {
+    function LibraryComponent(documentService) {
+        this.documentService = documentService;
+        this.documents = [];
+        this.articles = [];
+        this.books = [];
+        this.videos = [];
+        this.NoBooks = false;
+        this.NoArticles = false;
+        this.NoVideos = false;
+        this.executeSelectedChange = function (event) {
+            console.log(event);
+        };
     }
     LibraryComponent.prototype.ngOnInit = function () {
+        this.getDocuments();
     };
+    LibraryComponent.prototype.getDocuments = function () {
+        var _this = this;
+        this.documentService.getDocuments().subscribe(function (documentsfound) {
+            _this.documents = documentsfound;
+            _this.articles = documentsfound.filter(function (item) { return item.Type == 'Article'; });
+            _this.books = documentsfound.filter(function (item) { return item.Type == 'Book'; });
+            _this.videos = documentsfound.filter(function (item) { return item.Type == 'Video'; });
+            _this.ShowMessageOnEmptyLibraryResources();
+        }, function (error) { return _this.errorMessage = error; });
+    };
+    LibraryComponent.prototype.ShowMessageOnEmptyLibraryResources = function () {
+        if (this.books.length == 0) {
+            this.NoBooks = true;
+        }
+        if (this.articles.length == 0) {
+            this.NoArticles = true;
+        }
+        if (this.videos.length == 0) {
+            this.NoVideos = true;
+        }
+    };
+    LibraryComponent.ctorParameters = function () { return [
+        { type: _shared_services_document_service_document_service__WEBPACK_IMPORTED_MODULE_1__["DocumentService"] }
+    ]; };
     LibraryComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-library',
             template: __webpack_require__(/*! raw-loader!./library.component.html */ "./node_modules/raw-loader/index.js!./src/app/library/library.component.html"),
             styles: [__webpack_require__(/*! ./library.component.css */ "./src/app/library/library.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_shared_services_document_service_document_service__WEBPACK_IMPORTED_MODULE_1__["DocumentService"]])
     ], LibraryComponent);
     return LibraryComponent;
 }());
@@ -2342,6 +2380,82 @@ var SidenavListComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], SidenavListComponent);
     return SidenavListComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/services/document-service/document.service.ts":
+/*!**********************************************************************!*\
+  !*** ./src/app/shared/services/document-service/document.service.ts ***!
+  \**********************************************************************/
+/*! exports provided: DocumentService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DocumentService", function() { return DocumentService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var DocumentService = /** @class */ (function () {
+    function DocumentService(http) {
+        this.http = http;
+        this.documentsUrl = "assets/api/documents/documents.json";
+    }
+    DocumentService.prototype.getDocuments = function () {
+        var reqHeader = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({ 'No-Auth': 'True' });
+        return this.http.get(this.documentsUrl, { headers: reqHeader }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(function (data) { return console.log('All: ' + JSON.stringify(data)); }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.handleError));
+    };
+    DocumentService.prototype.getDocumentById = function (id) {
+        return this.getDocuments().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (products) { return products.find(function (p) { return p.Id === id; }); }));
+    };
+    DocumentService.prototype.addNewDocument = function (addNewDocument) {
+        console.log("Document saved Mr Gee");
+        var reqHeader = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({ 'No-Auth': 'True' });
+        return this.http.post('http:localhost/api/document', addNewDocument, { headers: reqHeader });
+    };
+    DocumentService.prototype.handleError = function (err) {
+        // in a real world app, we may send the server to some remote logging infrastructure
+        // instead of just logging it to the console
+        var errorMessage = '';
+        if (err.error instanceof Error) {
+            // A client-side or network error occurred. Handle it accordingly.
+            errorMessage = "An error occurred: " + err.error.message;
+        }
+        else {
+            // The backend returned an unsuccessful response code.
+            // The response body may contain clues as to what went wrong,
+            errorMessage = "Server returned code: " + err.status + ", error message is: " + err.message;
+        }
+        console.error(errorMessage);
+        return rxjs__WEBPACK_IMPORTED_MODULE_1__["Observable"].throw(errorMessage);
+    };
+    DocumentService.ctorParameters = function () { return [
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+    ]; };
+    DocumentService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+    ], DocumentService);
+    return DocumentService;
 }());
 
 
