@@ -807,6 +807,9 @@ p{
   margin-top: 5px;
   font-size: 0.9em;
 }
+.primaryColor{
+  color: #3f51b5;
+}
 /* Provide sufficient contrast against white background */
 /* a {
   color: #0366d6;
