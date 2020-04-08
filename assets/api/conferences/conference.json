@@ -1,0 +1,21 @@
+[
+	{
+        "ConferenceId": "100",
+        "Title": "Keep The Mind Focused",
+        "Date":"05/05/2020",
+        "Description": "Learning how to set your mind onto something and keeping the mind focused on that. When you set your mind onto something keep the mind focused on that. When you set your mind onto something keep the mind focused on that",
+        "Place": "Tzaneen Lodge",
+        "Category": "Community",
+        "ThemeImage": "assets/images/conferences/theme/theme_1.jpg"
+    },
+
+    {
+        "ConferenceId": "101",
+        "Title": "Set your self Free",
+        "Date": "01/04/2020",
+        "Description": "Learning life lesson when you set your mind free, you will be free. When you set your mind free, you will be free. When you set your mind free, you will be free. When you set your mind free, you will be free.",
+        "Place": "Mibidha Lodge",
+        "Category": "Private Organization",
+        "ThemeImage": "assets/images/conferences/theme/theme_2.jpg"
+    }
+]

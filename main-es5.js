@@ -51,7 +51,7 @@ module.exports = "<app-layout>\r\n  <mat-sidenav-container>\r\n    <mat-sidenav 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <h3>Conferences</h3>\r\n    <hr>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <p><b>Mormo-Care</b> conferences and workshops are there to help to apply learning concepts in our lives context using the principles of self developemt and we discuss the main tools to effectively develop personal abilities. A portion of our workshop is customised to the individual, enabling them to quickly identify their own areas of expertise and challenges. Many case studies are analysed to assist the delegate with application of the theory. This workshop involves pre-course preparation and the delegates can expect to have some after-hours work whilst the workshop is in session.</p>\r\n        </div>    \r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <img src=\"assets/images/conferences/conference_1_edited.jpg\" class=\"img-responsive img-thumbnail\" width=\"100%\">\r\n        </div>\r\n    </div>\r\n    <hr>\r\n</div>\r\n"
+module.exports = "<div class=\"container\">\r\n    <h3>Conferences</h3>\r\n    <hr>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <p><b>Mormo-Care</b> conferences and workshops are there to help to apply learning concepts in our lives context using the principles of self developemt and we discuss the main tools to effectively develop personal abilities. A portion of our workshop is customised to the individual, enabling them to quickly identify their own areas of expertise and challenges. Many case studies are analysed to assist the delegate with application of the theory. This workshop involves pre-course preparation and the delegates can expect to have some after-hours work whilst the workshop is in session.</p>\r\n        </div>    \r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <img src=\"assets/images/conferences/banner/conference_banner_1.jpg\" class=\"img-responsive img-thumbnail\" width=\"100%\">\r\n        </div>\r\n    </div>\r\n    <hr>\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <ul>\r\n                <li *ngFor='let conference of confenceList'>\r\n                    <div class=\"well\" style=\" background-color: beige; padding-top: 10px; padding-bottom: 10px; margin: 10px; color: black;\">\r\n                    <div class=\"row\">\r\n                        <div class=\"col-12 d-flex justify-content-center\">\r\n                            <p class=\"conferencetitle\">\r\n                                \"... {{ conference.Title | uppercase}} ...\"\r\n                            </p>                          \r\n                        </div>\r\n                    </div>\r\n                    <div class=\"row\">                            \r\n                        <div class=\"col-lg-3 col-md-3 col-sm-12\">\r\n                            <img class=\"img-responsive\" width=\"100%\" [src]=\"conference.ThemeImage\" style=\"padding-left: 5px;\"/>\r\n                        </div>\r\n                        <div class=\"col-lg-8 col-md-8 col-sm-12\">                            \r\n                            <div class=\"row\">\r\n                                <div class=\"col-lg-3 col-xs-3\">\r\n                                    <b>Speaker:</b>\r\n                                </div>\r\n                                <div class=\"col-lg-6 col-xs-6\">\r\n                                    Mr G Moyo , Dr Ndala\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"row\">\r\n                                <div class=\"col-lg-3 col-xs-3\">\r\n                                    <b>Conference Date:</b>\r\n                                </div>\r\n                                <div class=\"col-lg-6 col-xs-6\">\r\n                                    {{conference.Date | date}}\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"row\">\r\n                                <div class=\"col-lg-12\">\r\n                                    <b>Conference Objective :</b>\r\n                                <p>{{ conference.Description}} </p>\r\n                                </div>\r\n                            </div>  \r\n                            <div class=\"row\">\r\n                            <div class=\"col-sm-12\">\r\n                                <button mat-flat-button color=\"accent\">\r\n                                  <div class=\"mdc-button__ripple\"></div>\r\n                                  <i class=\"material-icons mdc-button__icon\" aria-hidden=\"true\">favorite</i>\r\n                                  <span class=\"mdc-button__label\">Book Seat</span>\r\n                                </button>\r\n        \r\n                                <button mat-flat-button color=\"warn\" style=\"margin: 5px;\">\r\n                                  <div class=\"mdc-button__ripple\"></div>\r\n                                  <i class=\"material-icons mdc-button__icon\" aria-hidden=\"true\">favorite</i>\r\n                                  <span class=\"mdc-button__label\">Comment</span>\r\n                                </button>\r\n                            </div>\r\n                            </div>                    \r\n                        </div>\r\n                    </div>\r\n                    </div>    \r\n                </li> \r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -106,7 +106,7 @@ module.exports = "<div class=\"container-fluid\" id=\"footer\" >\r\n    <div cla
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section fxLayout=\"column\" fxFlexAlign=\"stretch\">\r\n  <div fxFlexAlign=\"center\">\r\n    <p>Welcome to Mormo-Care</p>\r\n  </div>\r\n\r\n  <app-mormobanner></app-mormobanner>\r\n  <br>\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-sm\">\r\n        <mat-card>\r\n            <mat-card-header>\r\n                <div mat-card-avatar class=\"example-header-image\"></div>\r\n                <mat-card-title>Unlocking the Mind</mat-card-title>\r\n            </mat-card-header>\r\n            <img mat-card-image src=\"assets/images/home/unlock3.jpg\" class=\"img-responsive\" alt=\"Photo of a Shiba Inu\">\r\n            <mat-card-content>\r\n                Unlocking your mind power is a matter of working with your subconscious mind. It’s addressing the needs followed by giving your subconscious mind a purpose to work with you. When you have this combination, you’ll be able to tap into your mind power and create what it is you desire. Whether that’s being more creative or a path to success, you can create anything with your mind power.\r\n            </mat-card-content>\r\n            <mat-card-actions>\r\n                <button mat-button>LIKE</button>\r\n                <button mat-button>SHARE</button>\r\n            </mat-card-actions>\r\n        </mat-card>\r\n    </div>\r\n\r\n    <div class=\"col-sm\" class=\"col-md\">\r\n        <mat-card>\r\n            <mat-card-header >\r\n                <div mat-card-avatar class=\"example-header-image\"></div>\r\n                <mat-card-title>Great Minds</mat-card-title>\r\n            </mat-card-header>\r\n            <img mat-card-image src=\"assets/images/home/home_2a.jpg\" alt=\"Photo of a Shiba Inu\">\r\n            <mat-card-content>\r\n                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.\r\n                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally\r\n                bred for hunting.\r\n            </mat-card-content>\r\n            <mat-card-actions>\r\n                <button mat-button>LIKE</button>\r\n                <button mat-button>SHARE</button>\r\n            </mat-card-actions>\r\n        </mat-card>\r\n    </div>\r\n    <div class=\"col-sm\">\r\n        <mat-card>\r\n            <mat-card-header>\r\n                <mat-card-title>Testimonies</mat-card-title>\r\n            </mat-card-header>\r\n            <img mat-card-image src=\"assets/images/home/home_3a.jpg\" alt=\"Photo of a Shiba Inu\">\r\n            <mat-card-content>\r\n                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.\r\n                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally\r\n                bred for hunting.\r\n            </mat-card-content>\r\n            <mat-card-actions>\r\n                <button mat-button>LIKE</button>\r\n                <button mat-button>SHARE</button>\r\n            </mat-card-actions>\r\n        </mat-card>\r\n    </div>\r\n </div>\r\n<br><br>\r\n<div class=\"row\">\r\n    <div class=\"col-md\">\r\n        <mat-tab-group mat-stretch-tabs (selectedTabChange)=\"executeSelectedChange($event)\">\r\n            <mat-tab bg-color=\"primary\" label=\"LIFE COACH\"> \r\n                <h5>Self-Healing</h5>\r\n                <br>\r\n                <div class=\"row\">\r\n                    <div class=\"row\">\r\n                        <div class=\"col-4\" style=\"margin-left: 2em;\">\r\n                            Discover the power of your mind and cure more than 75% of sicknesses\r\n                        </div>\r\n                        <div class=\"col-4\">\r\n                            <img src=\"assets/images/home/home_3.jpg\" class=\"img-responsive img-thumbnail\"/>\r\n                        </div>\r\n                    </div>\r\n                </div> \r\n            </mat-tab>\r\n            <mat-tab label=\"TRAINING\">\r\n                <p>Be careful of what you expose your mind to</p>\r\n            </mat-tab>\r\n            <mat-tab label=\"CONFERENCES\">\r\n                <p>What the mind knows<br>\r\n                What you should know<br>\r\n                Notes</p>\r\n            </mat-tab>\r\n        </mat-tab-group>\r\n    </div> \r\n</div>\r\n<div class=\"row justify-content-center\">\r\n    <div class=\"col-md-12\">\r\n        <p style=\"font-size: 20px; align-content: center;\">\" Thank you for visiting Mormo-Care. You can show your appreciation and support future development by donating\"....\r\n        <button mat-raised-button color=\"accent\">\r\n          <div class=\"mdc-button__ripple\"></div>\r\n          <i class=\"material-icons mdc-button__icon\" aria-hidden=\"true\">favorite</i>\r\n          <span class=\"mdc-button__label\">Donate!!!</span>\r\n        </button></p>\r\n    </div>\r\n</div>\r\n</section>\r\n"
+module.exports = "<section fxLayout=\"column\" fxFlexAlign=\"stretch\">\r\n  <div fxFlexAlign=\"center\">\r\n    <p>Welcome to Mormo-Care</p>\r\n  </div>\r\n\r\n  <app-mormobanner></app-mormobanner>\r\n  <br>\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-sm\">\r\n        <mat-card>\r\n            <mat-card-header>\r\n                <div mat-card-avatar class=\"example-header-image\"></div>\r\n                <mat-card-title>Unlocking the Mind</mat-card-title>\r\n            </mat-card-header>\r\n            <img mat-card-image src=\"assets/images/home/unlock3.jpg\" class=\"img-responsive\" alt=\"Photo of a Shiba Inu\">\r\n            <mat-card-content>\r\n                Unlocking your mind power is a matter of working with your subconscious mind. It’s addressing the needs followed by giving your subconscious mind a purpose to work with you. When you have this combination, you’ll be able to tap into your mind power and create what it is you desire. Whether that’s being more creative or a path to success, you can create anything with your mind power.\r\n            </mat-card-content>\r\n            <mat-card-actions>\r\n                <button mat-button>LIKE</button>\r\n                <button mat-button>SHARE</button>\r\n            </mat-card-actions>\r\n        </mat-card>\r\n    </div>\r\n\r\n    <div class=\"col-sm\" class=\"col-md\">\r\n        <mat-card>\r\n            <mat-card-header >\r\n                <div mat-card-avatar class=\"example-header-image\"></div>\r\n                <mat-card-title>Great Minds</mat-card-title>\r\n            </mat-card-header>\r\n            <img mat-card-image src=\"assets/images/home/home_2a.jpg\" alt=\"Photo of a Shiba Inu\">\r\n            <mat-card-content>\r\n                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.\r\n                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally\r\n                bred for hunting.\r\n            </mat-card-content>\r\n            <mat-card-actions>\r\n                <button mat-button>LIKE</button>\r\n                <button mat-button>SHARE</button>\r\n            </mat-card-actions>\r\n        </mat-card>\r\n    </div>\r\n    <div class=\"col-sm\">\r\n        <mat-card>\r\n            <mat-card-header>\r\n                <mat-card-title>Testimonies</mat-card-title>\r\n            </mat-card-header>\r\n            <img mat-card-image src=\"assets/images/home/home_3a.jpg\" alt=\"Photo of a Shiba Inu\">\r\n            <mat-card-content>\r\n                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.\r\n                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally\r\n                bred for hunting.\r\n            </mat-card-content>\r\n            <mat-card-actions>\r\n                <button mat-button>LIKE</button>\r\n                <button mat-button>SHARE</button>\r\n            </mat-card-actions>\r\n        </mat-card>\r\n    </div>\r\n </div>\r\n<br><br>\r\n<div class=\"row\">\r\n    <div class=\"col-md\">\r\n        <mat-tab-group mat-stretch-tabs (selectedTabChange)=\"executeSelectedChange($event)\">\r\n            <mat-tab bg-color=\"primary\" label=\"LIFE COACH\"> \r\n                <h5>Self-Healing</h5>\r\n                <br>\r\n                <div class=\"row\">\r\n                    <div class=\"row\">\r\n                        <div class=\"col-4\" style=\"margin-left: 2em;\">\r\n                            Discover the power of your mind and cure more than 75% of sicknesses\r\n                        </div>\r\n                        <div class=\"col-4\">\r\n                            <img src=\"assets/images/home/home_3.jpg\" class=\"img-responsive img-thumbnail\"/>\r\n                        </div>\r\n                    </div>\r\n                </div> \r\n            </mat-tab>\r\n            <mat-tab label=\"TRAINING\">\r\n                <p>Be careful of what you expose your mind to</p>\r\n            </mat-tab>\r\n            <mat-tab label=\"HABBITS\">\r\n                <p>What the mind knows<br>\r\n                What you should know<br>\r\n                Notes</p>\r\n            </mat-tab>\r\n        </mat-tab-group>\r\n    </div> \r\n</div>\r\n<div class=\"row justify-content-center\">\r\n    <div class=\"col-md-12\">\r\n        <p style=\"font-size: 20px; align-content: center;\">\" Thank you for visiting Mormo-Care. You can show your appreciation and support future development by donating\"....\r\n        <button mat-raised-button color=\"accent\">\r\n          <div class=\"mdc-button__ripple\"></div>\r\n          <i class=\"material-icons mdc-button__icon\" aria-hidden=\"true\">favorite</i>\r\n          <span class=\"mdc-button__label\">Donate!!!</span>\r\n        </button></p>\r\n    </div>\r\n</div>\r\n</section>\r\n"
 
 /***/ }),
 
@@ -757,12 +757,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _admin_layout_layout_module__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./admin/layout/layout.module */ "./src/app/admin/layout/layout.module.ts");
 /* harmony import */ var _admin_administration_administration_module__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./admin/administration/administration.module */ "./src/app/admin/administration/administration.module.ts");
 /* harmony import */ var _aboutus_aboutus_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./aboutus/aboutus.component */ "./src/app/aboutus/aboutus.component.ts");
+/* harmony import */ var _shared_services_conference_service_conference_service__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./shared/services/conference-service/conference.service */ "./src/app/shared/services/conference-service/conference.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -832,7 +834,7 @@ var AppModule = /** @class */ (function () {
                     progressBar: true
                 })
             ],
-            providers: [_shared_services_image_service_image_service__WEBPACK_IMPORTED_MODULE_27__["ImageService"], _shared_services_team_service_team_service__WEBPACK_IMPORTED_MODULE_28__["TeamService"], _shared_services_user_service_user_service__WEBPACK_IMPORTED_MODULE_23__["UserService"], {
+            providers: [_shared_services_conference_service_conference_service__WEBPACK_IMPORTED_MODULE_35__["ConferenceService"], _shared_services_image_service_image_service__WEBPACK_IMPORTED_MODULE_27__["ImageService"], _shared_services_team_service_team_service__WEBPACK_IMPORTED_MODULE_28__["TeamService"], _shared_services_user_service_user_service__WEBPACK_IMPORTED_MODULE_23__["UserService"], {
                     provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HTTP_INTERCEPTORS"],
                     useClass: _auth_interceptor_auth_interceptor__WEBPACK_IMPORTED_MODULE_26__["AuthInterceptor"],
                     multi: true
@@ -969,7 +971,7 @@ var AuthInterceptor = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbmZlcmVuY2VzL2NvbmZlcmVuY2VzLmNvbXBvbmVudC5jc3MifQ== */"
+module.exports = ".conferencetitle{\r\n    font-family: \"Courier New\", Courier, monospace;\r\nfont-size: 23px;\r\nletter-spacing: -1.6px;\r\nword-spacing: -1.8px;\r\ncolor: #1F28FF;\r\nfont-weight: 700;\r\ntext-decoration: none;\r\nfont-style: italic;\r\nfont-variant: normal;\r\ntext-transform: capitalize;\r\nalign-self: auto;\r\nmargin-bottom: 20px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29uZmVyZW5jZXMvY29uZmVyZW5jZXMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLDhDQUE4QztBQUNsRCxlQUFlO0FBQ2Ysc0JBQXNCO0FBQ3RCLG9CQUFvQjtBQUNwQixjQUFjO0FBQ2QsZ0JBQWdCO0FBQ2hCLHFCQUFxQjtBQUNyQixrQkFBa0I7QUFDbEIsb0JBQW9CO0FBQ3BCLDBCQUEwQjtBQUMxQixnQkFBZ0I7QUFDaEIsbUJBQW1CO0FBQ25CIiwiZmlsZSI6InNyYy9hcHAvY29uZmVyZW5jZXMvY29uZmVyZW5jZXMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb25mZXJlbmNldGl0bGV7XHJcbiAgICBmb250LWZhbWlseTogXCJDb3VyaWVyIE5ld1wiLCBDb3VyaWVyLCBtb25vc3BhY2U7XHJcbmZvbnQtc2l6ZTogMjNweDtcclxubGV0dGVyLXNwYWNpbmc6IC0xLjZweDtcclxud29yZC1zcGFjaW5nOiAtMS44cHg7XHJcbmNvbG9yOiAjMUYyOEZGO1xyXG5mb250LXdlaWdodDogNzAwO1xyXG50ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbmZvbnQtc3R5bGU6IGl0YWxpYztcclxuZm9udC12YXJpYW50OiBub3JtYWw7XHJcbnRleHQtdHJhbnNmb3JtOiBjYXBpdGFsaXplO1xyXG5hbGlnbi1zZWxmOiBhdXRvO1xyXG5tYXJnaW4tYm90dG9tOiAyMHB4O1xyXG59Il19 */"
 
 /***/ }),
 
@@ -984,6 +986,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConferencesComponent", function() { return ConferencesComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _shared_services_conference_service_conference_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/services/conference-service/conference.service */ "./src/app/shared/services/conference-service/conference.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -994,18 +997,31 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var ConferencesComponent = /** @class */ (function () {
-    function ConferencesComponent() {
+    function ConferencesComponent(conferenceService) {
+        this.conferenceService = conferenceService;
+        this.confenceList = [];
     }
     ConferencesComponent.prototype.ngOnInit = function () {
+        this.getAllConferences();
     };
+    ConferencesComponent.prototype.getAllConferences = function () {
+        var _this = this;
+        this.conferenceService.getAllConferences().subscribe(function (conferencesFound) {
+            _this.confenceList = conferencesFound;
+        }, function (error) { return _this.errorMessage = error; });
+    };
+    ConferencesComponent.ctorParameters = function () { return [
+        { type: _shared_services_conference_service_conference_service__WEBPACK_IMPORTED_MODULE_1__["ConferenceService"] }
+    ]; };
     ConferencesComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-conferences',
             template: __webpack_require__(/*! raw-loader!./conferences.component.html */ "./node_modules/raw-loader/index.js!./src/app/conferences/conferences.component.html"),
             styles: [__webpack_require__(/*! ./conferences.component.css */ "./src/app/conferences/conferences.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_shared_services_conference_service_conference_service__WEBPACK_IMPORTED_MODULE_1__["ConferenceService"]])
     ], ConferencesComponent);
     return ConferencesComponent;
 }());
@@ -2386,6 +2402,58 @@ var SidenavListComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/shared/services/conference-service/conference.service.ts":
+/*!**************************************************************************!*\
+  !*** ./src/app/shared/services/conference-service/conference.service.ts ***!
+  \**************************************************************************/
+/*! exports provided: ConferenceService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConferenceService", function() { return ConferenceService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ConferenceService = /** @class */ (function () {
+    function ConferenceService(http) {
+        this.http = http;
+        this.conferenceUrl = "assets/api/conferences/conference.json";
+    }
+    ConferenceService.prototype.getAllConferences = function () {
+        return this.http.get(this.conferenceUrl);
+    };
+    ConferenceService.prototype.getConferenceById = function (conferenceId) {
+        return this.getAllConferences().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(function (conferences) { return conferences.find(function (conference) { return conference.ConferenceId == conferenceId; }); }));
+    };
+    ConferenceService.ctorParameters = function () { return [
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+    ]; };
+    ConferenceService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+    ], ConferenceService);
+    return ConferenceService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/shared/services/document-service/document.service.ts":
 /*!**********************************************************************!*\
   !*** ./src/app/shared/services/document-service/document.service.ts ***!
@@ -2622,7 +2690,7 @@ var TeamService = /** @class */ (function () {
                 'Title': 'Mr',
                 'Fname': 'Gerald',
                 'Lname': 'Moyo',
-                'CoPosition': 'Director',
+                'CoPosition': 'FOUNDER',
                 'Qualification': 'Motivational Speaker',
                 'ProfilPicture': 'assets/images/profile_pics/male_user.png',
                 'Profile': 'Mr G Moyo is a qualified motivationa speaker, with vast experience in life coaching and self development ',
